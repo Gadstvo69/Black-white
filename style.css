@@ -12,6 +12,20 @@
     margin:0;
 }
 
+:root {
+    --main-bg-color: white;
+    --main-text-color: black;
+    --second-bg-color: #F6F6F6;
+    --second-stars-color: #E5E5E5;
+}
+
+*.dark:root {
+    --main-bg-color: black;
+    --main-text-color: white;
+    --second-bg-color: #292929;
+    --second-stars-color: #7a7a7a;
+}
+
 nav {
     margin: 1vh 15%;
     padding: 4vh 0;
