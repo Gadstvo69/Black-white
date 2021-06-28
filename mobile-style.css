@@ -1,0 +1,172 @@
+.lock {
+    overflow:hidden;
+}
+
+nav {
+    display:none;
+}
+
+nav .menu__close {
+    opacity:1;
+}
+
+nav.active { 
+    height:55vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:flex-start;
+    border:none;
+    line-height: 35px;
+    font-size: 30px;
+    margin-top: 6vh;
+}
+
+.nav_lang {
+    display:none;
+    font-family: Gilroy-Bold;
+    font-size: 34px;
+    line-height: 42px;
+    color: black;
+    transform: rotate(90deg);
+}
+
+.nav_lang span {
+    color: #828282;
+}
+
+.nav_lang.active {
+    display: inline;
+    position:absolute;
+    bottom: 13vh;
+    right: -6vw;
+}
+
+.menu {
+    position: relative;
+    opacity: 1;
+    float:right;
+    margin-top: 12px;
+}
+
+.home {
+    padding: 11vh 10vw 13vh;
+}
+
+.home.lock {
+    opacity:0;
+}
+
+.home_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.profile {
+    width: 80vw;
+    margin-top: 4vh;
+}
+
+.lang {
+    display:none;
+}
+
+.home_pict {
+    margin-top: 8vh;  
+}
+
+.about_me {
+    padding: 13vh 10vw 10vh;
+}
+
+.about_me_info__large {
+    display:none;
+}
+
+.about_me_info__small {
+    position:relative;
+    opacity: 1;
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.about_me_info__item {
+    margin-top:30px;
+}
+
+.skills {
+    padding: 83px 30px 17px;
+}
+
+.skills_title {
+    margin-bottom: 50px;
+}
+
+.skills_info {
+    margin-bottom: 71px;
+}
+
+.programs {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.programs_item {
+    height: 220px;
+    margin-bottom: 82px;
+}
+
+.program_title {
+    margin-top: 21px;
+}
+
+.stars {
+    margin-top: 38px;
+}
+
+.stars__item {
+    margin-right: 9px;
+}
+
+.portfolio {
+    padding: 81px 30px 30px;
+}
+
+.portfolio_item {
+    padding-bottom: 85px;
+}
+
+.contacts {
+    padding: 82px 30px 90px;
+}
+
+.contacts_title {
+    margin-bottom: 27px;
+}
+
+.contacts_text {
+    margin-bottom: 40px;
+}
+
+button {
+    width: 100%;
+}
+
+.contacts_href {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+.contacts_href_item {
+    margin: 0;
+}
+
+.contacts_text2 {
+    margin-top: 49px;
+}

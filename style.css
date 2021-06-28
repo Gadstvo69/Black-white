@@ -1,0 +1,272 @@
+@font-face {
+	font-family: 'Gilroy-Bold'; 
+	src: url(fonts/Gilroy-Bold.woff); 
+}
+
+@font-face {
+	font-family: 'Gilroy-Medium'; 
+	src: url(fonts/Gilroy-Medium.woff); 
+}
+
+*  {
+    margin:0;
+}
+
+nav {
+    margin: 1vh 15%;
+    padding: 4vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #828282;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.nav_item1, .nav_item {
+    text-decoration: none;
+    font-family: Gilroy-Bold;
+}
+
+.nav_item1 {
+    color: black;
+}
+
+.nav_item {
+    color: #828282;
+}
+
+.nav_lang {
+    display:none;
+}
+
+nav .menu__close {
+    position: absolute;
+    top: 11vh;
+    right: 10vw;
+    width: 22px;
+    height: 22px;
+    opacity:0;
+}
+
+nav .menu__close::before, nav .menu__close::after {
+    content: '';
+    display: block;
+    width: 27px;
+    height: 4px;
+    background-color: #828282; 
+    transform: translateY(50%) rotate(45deg);           
+}
+nav .menu__close::after {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.menu {
+    position:absolute;
+    opacity:0;
+}
+
+.home {
+    padding: 1% 15% 6%;
+}
+
+.home_info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.name {
+    width: 10vw;
+    font-family: Gilroy-Bold;
+    font-size: 47.3392px;
+    line-height: 59px;
+}
+
+.profile {
+    width: 20vw;
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.lang {
+    font-family: Gilroy-Bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: black;    
+    transform: rotate(-90deg);
+    margin-bottom: 3vh;
+    margin-right: -20px;
+}
+
+.lang span {
+    color: #828282;
+}
+
+.home_pict {
+    margin: 5vh 0;
+    width: 100%;    
+}
+
+.about_me {
+    padding: 6% 15% 5%;
+    background: #F6F6F6;
+    text-align: center;
+}
+
+.about_me_title {
+    font-family: Gilroy-Bold;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.about_me_info__large {
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 22px;    
+}
+
+.about_me_info__small {
+    position:absolute;
+    opacity:0;
+}
+
+.about_me_info__item {
+    margin: 4vh 0 6vh;
+}
+
+.skills {
+    padding: 6% 15%;
+    text-align: center;
+}
+
+.skills_title {
+    font-family: Gilroy-Bold;
+    font-size: 34px;
+    line-height: 42px;
+    margin-bottom: 5%;
+}
+
+.skills_info {
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 5%;
+}
+
+.programs {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.programs_item {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.program_pict1 {
+    background: radial-gradient(75.99% 75.64% at 32.94% 22.44%, rgba(52, 54, 78, 0.98) 0%, #0C0824 100%);
+}
+
+.program_pict2 {
+    background: radial-gradient(76% 75.63% at 32.97% 22.44%, rgba(66, 51, 37, 0.98) 0%, #1C0A00 100%);
+}
+
+.program_pict3 {
+    background: radial-gradient(76% 75.63% at 32.97% 22.42%, rgba(68, 47, 85, 0.98) 0%, #12002C 100%);
+}
+
+.program_pict4 {
+    margin:0;
+    padding:0;
+}
+
+.program_title {
+    font-family: Gilroy-Bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+}
+
+.portfolio {
+    background: #F6F6F6;
+    padding: 6% 15% 0vh;
+    text-align: center;
+}
+
+.portfolio_title {
+    font-family: Gilroy-Bold;
+    font-size: 34px;
+    line-height: 42px;
+    margin-bottom: 8vh;
+}
+
+.portfolio_item {
+    padding-bottom: 16vh;
+}
+
+.portfolio_pict {
+    width: 100%;
+    margin-bottom: 5vh;
+}
+
+.portfolio_item_text {
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: black;
+}
+
+.contacts {
+    padding: 5% 15%;
+    text-align: center;
+}
+
+.contacts_title {
+    font-family: Gilroy-Bold;
+    font-size: 34px;
+    line-height: 42px;
+    margin-bottom: 3%;
+}
+
+.contacts_text {
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 3%;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 6%;
+    height: 40px;
+    padding: 0 29px;
+    text-align: center;
+    display:table-cell;
+    vertical-align: middle;
+    font-family: Gilroy-Bold;
+    font-size: 18px;
+    line-height: 22px;
+    border: none;
+}
+
+.contacts_text2 {
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+    margin-top: 3%;
+}
+
+.contacts_href_item {
+    margin: 2%;
+}
