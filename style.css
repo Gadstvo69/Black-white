@@ -84,7 +84,7 @@ nav .menu__close::after {
     padding: 1% 15% 6%;
 }
 
-.home_info {
+.home_information {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
