@@ -4,42 +4,38 @@
 
 nav {
     display:none;
+    margin: 0;
+    padding: 0;
+    
 }
 
-nav .menu__close {
+.menu__close {
     opacity:1;
 }
 
 nav.active { 
-    height:55vh;
+    overflow: scroll;
+    height: 90vh;
     display:flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: start;
     align-items:flex-start;
     border:none;
     line-height: 35px;
     font-size: 30px;
-    margin-top: 6vh;
+    margin: 11vh 10% 0;
 }
 
-.nav_lang {
-    display:none;
-    font-family: Gilroy-Bold;
-    font-size: 34px;
-    line-height: 42px;
-    color: black;
-    transform: rotate(90deg);
+.nav_item1 {
+    margin-bottom: 20px;
 }
 
-.nav_lang span {
-    color: #828282;
+.nav_item {
+    margin: 20px 0;
 }
 
-.nav_lang.active {
-    display: inline;
-    position:absolute;
-    bottom: 13vh;
-    right: -6vw;
+.nav_switch {
+    display: inline-block;  
 }
 
 .menu {
@@ -69,7 +65,7 @@ nav.active {
     margin-top: 4vh;
 }
 
-.lang {
+.switch {
     display:none;
 }
 
