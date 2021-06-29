@@ -8,8 +8,10 @@
 	src: url(fonts/Gilroy-Medium.woff); 
 }
 
-*  {
+* {
     margin:0;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
 }
 
 :root {
@@ -43,41 +45,55 @@ nav {
 }
 
 .nav_item1 {
-    color: black;
+    color: var(--main-text-color);
 }
 
 .nav_item {
     color: #828282;
 }
 
-.nav_lang {
-    display:none;
-}
-
-nav .menu__close {
+.menu__close {
     position: absolute;
-    top: 11vh;
+    top: 12vh;
     right: 10vw;
     width: 22px;
     height: 22px;
     opacity:0;
 }
 
-nav .menu__close::before, nav .menu__close::after {
+.nav_switch {
+    display: none;
+    position:absolute;
+    bottom: 100px;
+    right: -7%;
+    font-family: Gilroy-Bold;    
+    font-size: 34px;
+    line-height: 34px;
+    transform: rotate(90deg);    
+    cursor: pointer;
+}
+
+.nav_switch span {
+    color: #828282;
+}
+
+.menu__close::before, .menu__close::after {
     content: '';
     display: block;
     width: 27px;
     height: 4px;
-    background-color: #828282; 
+    background-color: var(--main-text-color); 
     transform: translateY(50%) rotate(45deg);           
 }
-nav .menu__close::after {
+
+.menu__close::after {
     transform: translateY(-50%) rotate(-45deg);
 }
 
 .menu {
     position:absolute;
     opacity:0;
+    fill: var(--main-text-color);
 }
 
 .home {
@@ -104,17 +120,18 @@ nav .menu__close::after {
     line-height: 22px;
 }
 
-.lang {
+.switch {
     font-family: Gilroy-Bold;
-    font-size: 16px;
-    line-height: 20px;
-    color: black;    
+    font-size: 18px;
+    line-height: 20px;  
     transform: rotate(-90deg);
-    margin-bottom: 3vh;
-    margin-right: -20px;
+    margin-bottom: 6vh;
+    margin-right: -38px;
+    cursor: pointer;
+
 }
 
-.lang span {
+.switch span {
     color: #828282;
 }
 
@@ -125,7 +142,7 @@ nav .menu__close::after {
 
 .about_me {
     padding: 6% 15% 5%;
-    background: #F6F6F6;
+    background: var(--second-bg-color);
     text-align: center;
 }
 
@@ -134,21 +151,25 @@ nav .menu__close::after {
     font-size: 34px;
     line-height: 42px;
     text-align: center;
+    background-color: var(--second-bg-color);
 }
 
 .about_me_info__large {
     font-family: Gilroy-Medium;
     font-size: 18px;
-    line-height: 22px;    
+    line-height: 22px; 
+    background-color: var(--second-bg-color);
 }
 
 .about_me_info__small {
     position:absolute;
     opacity:0;
+    background-color: var(--second-bg-color);
 }
 
 .about_me_info__item {
     margin: 4vh 0 6vh;
+    background-color: var(--second-bg-color);
 }
 
 .skills {
@@ -208,13 +229,22 @@ nav .menu__close::after {
     color: #828282;
 }
 
+.stars__item {
+    fill: var(--main-text-color);
+}
+
+.stars__item_second {
+    fill: var(--second-stars-color);
+}
+
 .portfolio {
-    background: #F6F6F6;
+    background: var(--second-bg-color);
     padding: 6% 15% 0vh;
     text-align: center;
 }
 
 .portfolio_title {
+    background-color: var(--second-bg-color);
     font-family: Gilroy-Bold;
     font-size: 34px;
     line-height: 42px;
@@ -222,6 +252,7 @@ nav .menu__close::after {
 }
 
 .portfolio_item {
+    background-color: var(--second-bg-color);
     padding-bottom: 16vh;
 }
 
@@ -231,11 +262,12 @@ nav .menu__close::after {
 }
 
 .portfolio_item_text {
+    background-color: var(--second-bg-color);
     font-family: Gilroy-Medium;
     font-size: 18px;
     line-height: 22px;
     text-decoration-line: underline;
-    color: black;
+    color: var(--main-text-color);
 }
 
 .contacts {
@@ -251,15 +283,15 @@ nav .menu__close::after {
 }
 
 .contacts_text {
-    font-family: "Gilroy-Medium";
+    font-family: Gilroy-Medium;
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 3%;
 }
 
 button {
-    background-color: black;
-    color: white;
+    background-color: var(--main-text-color);
+    color: var(--main-bg-color);
     border-radius: 20px;
     margin-bottom: 6%;
     height: 40px;
@@ -282,5 +314,11 @@ button {
 }
 
 .contacts_href_item {
+    display: inline-block;
+    fill: var(--main-text-color);
+    stroke: var(--main-text-color);
+    stroke-width: 0.5;
     margin: 2%;
+    width: 40px;
+    height: 40px;
 }
